@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="13dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+    <TextView
+        android:id="@+id/tx_CName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biller Name"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        />
+
+        <TextView
+            android:id="@+id/tx_CPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:textSize="12dp"
+            android:text="Phone"
+            />
+        <TextView
+            android:id="@+id/tx_CMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:textSize="12dp"
+            android:text="Mail"
+            />
+
+        <TextView
+            android:id="@+id/tx_CAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:textSize="12dp"
+            android:text="Address"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

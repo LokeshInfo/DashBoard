@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_layout"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <!--    <include
+                layout="@layout/layout_toolbar"
+               />-->
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:visibility="visible"
+        android:id="@+id/navigation_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_marginRight="-64dp"
+        android:background="@color/app_theme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/app_theme"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_theme"
+                >
+
+                <include
+                    layout="@layout/layout_nav_header"
+                    />
+            </LinearLayout>
+
+            <ExpandableListView
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_theme"
+                android:groupIndicator="@null"
+                android:layout_marginTop="23dp"
+                android:listSelector="@color/white"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                />
+<!--
+             <include layout="@layout/layout_nav_footer" />-->
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

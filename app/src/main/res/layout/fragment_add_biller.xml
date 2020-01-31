@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/ttbar"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Name"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/EdName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Email Address"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/EdEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="textEmailAddress"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Phone"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/EdPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Company"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/EdCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Address"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/EdAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="text"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" City"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/EdCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" State"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/EdState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Postal Code"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/EdPostalCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Country"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/EdCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Select Logo"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/SpLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+
+        <Button
+            android:id="@+id/AddBiller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:text="Add Biller"
+            android:background="@drawable/adbutton"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

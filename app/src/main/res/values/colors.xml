@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="greenlight">#04B475</color>
+
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="app_theme">#209688</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#232423</color>
+    <color name="hgrey">#3C3A3A</color>
+    <color name="light_blue">#3694C7</color>
+    <color name="lpurp">#9932CC</color>
+    <color name="blue">#0A26DB</color>
+    <color name="lblue">#5EA5EE</color>
+
+    <color name="temp_color">#2196F3</color>
+
+    <color name="colorbackground">#f2f2f2</color>
+    <color name="colorGrey">#949494</color>
+    <color name="lightGrey">#dcdbdb</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorBackground">#f5f5f5</color>
+    <color name="colorblack">#000000</color>
+
+
+    <color name="colorCart">#ffcc33</color>
+    <color name="swiple_bacground">#FA6565</color>
+    <color name="colorGreen">#006039</color>
+</resources>

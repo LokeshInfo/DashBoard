@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/ttbar"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Mobile Number"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/Ed_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="number"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Email"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/Ed_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Address"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/Ed_addrss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="textMultiLine"
+            />
+
+        <Button
+            android:id="@+id/ButtonUpContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:text="Update Contact"
+            android:background="@drawable/adbutton"
+            />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

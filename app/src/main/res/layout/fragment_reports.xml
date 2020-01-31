@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/ttbr"
+        layout="@layout/layout_toolbar"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ttbr"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_graph"
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginTop="4pt"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/BarChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            </com.github.mikephil.charting.charts.BarChart>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

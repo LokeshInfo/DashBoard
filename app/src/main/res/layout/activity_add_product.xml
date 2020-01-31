@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Product Code"
+            style="@style/HintFontPath"/>
+
+            <EditText
+                android:id="@+id/EdPcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextFontPath"
+                android:inputType="text"
+                />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Product Name"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+
+        <EditText
+            android:id="@+id/EdPname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/HintFontPath"
+            android:text=" Select Product Category" />
+
+        <Spinner
+            android:id="@+id/SpCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/HintFontPath"
+            android:text=" Select Product Sub Category" />
+
+
+        <Spinner
+            android:id="@+id/SpSubCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Product Unit"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/EdPunit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            style="@style/EditTextFontPath"
+            />
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Product Cost"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+
+        <EditText
+            android:id="@+id/EdPcost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            style="@style/EditTextFontPath"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Product Price"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+
+            <EditText
+                android:id="@+id/EdPprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                style="@style/EditTextFontPath"
+                />
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Product Quantity"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+
+        <EditText
+            android:id="@+id/EdPqty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            style="@style/EditTextFontPath"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Product Brand"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+
+            <EditText
+                android:id="@+id/EdPbrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                style="@style/EditTextFontPath"
+                />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/HintFontPath"
+            android:text=" Select Product Discount" />
+
+        <Spinner
+            android:id="@+id/SpDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/HintFontPath"
+            android:text=" Select Product Type" />
+
+        <Spinner
+            android:id="@+id/SpPtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/HintFontPath"
+            android:text=" Select Show Web" />
+
+        <Spinner
+            android:id="@+id/SpShowWeb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Variant"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/LineLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <android.support.design.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </android.support.design.chip.ChipGroup>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ExLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Product Description"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:id="@+id/EdPdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            />
+
+        <TextView
+            android:layout_marginTop="10pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Product Image(s)"
+            style="@style/HintFontPath"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pic"
+            />
+
+
+
+     <Button
+        android:id="@+id/AddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:text="Add"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/adbutton"
+        android:textColor="@color/white"
+        />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

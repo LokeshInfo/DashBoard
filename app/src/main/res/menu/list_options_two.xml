@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/group1"
+        android:title=""
+        >
+    <item
+        android:id="@+id/Editsubcat"
+        android:orderInCategory="0"
+        android:title="Edit Subcategory" />
+
+    <item
+        android:id="@+id/Dltcat"
+        android:orderInCategory="1"
+        android:title="Delete Subcategory" />
+    </item>
+
+</menu>

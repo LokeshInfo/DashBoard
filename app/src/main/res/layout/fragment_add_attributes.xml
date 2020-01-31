@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/ttbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HintFontPath"
+                android:text=" Select Category"
+                android:layout_marginTop="15dp"
+                />
+
+            <Spinner
+                android:id="@+id/SpCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:spinnerMode="dropdown"
+                >
+            </Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HintFontPath"
+                android:text=" Select SubCategory"
+                android:layout_marginTop="15dp"
+                />
+
+            <Spinner
+                android:id="@+id/SpSubCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:spinnerMode="dropdown"
+                >
+            </Spinner>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Llayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </LinearLayout>
+            <Button
+                android:id="@+id/AddMore"
+                android:layout_width="100pt"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10pt"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:text="Add More"
+                android:layout_gravity="center"
+                android:background="@drawable/adbutton"
+                />
+
+            <Button
+                android:id="@+id/AddAttribute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:text="Save"
+                android:background="@drawable/adbutton"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

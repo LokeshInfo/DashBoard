@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ttbar"
+        android:scrollbars="vertical"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Date"
+        style="@style/HintFontPath"/>
+
+    <EditText
+        android:id="@+id/Eddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Refrence Number"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/EdPrefnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Select Biller"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/SpBiller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Select Customer"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/SpCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Invoice Tax"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/SpInvoiceTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Product Name"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/EdPdNm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Product Code"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edPdCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Discount"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Tax Rate"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edTaxRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Size"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Product Color"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edPdColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Quantity"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Unit Price"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edUnitPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Note"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            style="@style/EditTextFontPath"
+            />
+
+        <Button
+            android:id="@+id/AddSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:background="@drawable/adbutton"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

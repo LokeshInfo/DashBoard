@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardvu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/ttbar"
+        android:layout_marginTop="15pt"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+        <TextView
+            android:id="@+id/txhder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:text="Header Logo"
+            style="@style/FontTxtView"
+            android:layout_marginStart="10dp"
+            />
+        <Button
+            android:id="@+id/Selectimg"
+            android:layout_width="60pt"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/adbutton"
+            android:text="Select Image"
+            android:layout_gravity="center"
+            />
+
+            <TextView
+                android:id="@+id/imgName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Max. file size 300 KB and (width=200px) x (height=30px)."
+                android:layout_marginTop="15dp"
+                />
+
+        <Button
+            android:id="@+id/UploadLogo"
+            android:layout_width="100pt"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:textSize="7pt"
+            android:text="Upload Logo"
+            android:background="@drawable/adbutton"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardvu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/cardvu1"
+        android:layout_marginTop="15pt"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="Login Logo"
+                style="@style/FontTxtView"
+                android:layout_marginStart="10dp"
+                />
+            <Button
+                android:id="@+id/Selectimg2"
+                android:layout_width="60pt"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@drawable/adbutton"
+                android:text="Select Image"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/imgName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Max. file size 300 KB and (width=300px) x (height=80px)."
+                android:layout_marginTop="15dp"
+                />
+
+            <Button
+                android:id="@+id/UploadLogo2"
+                android:layout_width="100pt"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:textSize="7pt"
+                android:text="Upload Logo"
+                android:background="@drawable/adbutton"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"
+        />
+
+    <ImageView
+        android:id="@+id/Product_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ttbar"
+        android:src="@drawable/user_profile"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_below="@id/Product_image"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Product Code"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Product Name"
+                />
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Category"
+                />
+            <TextView
+                android:id="@+id/PaidAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Product Cost"
+                />
+            <TextView
+                android:id="@+id/DueAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Product Price"
+                />
+            <TextView
+                android:id="@+id/Pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Quantity"
+                />
+            <TextView
+                android:id="@+id/tx_PdUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Product Unit"
+                />
+            <TextView
+                android:id="@+id/tx_AlertQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/FontTxtView"
+                android:text="Alert Quantity"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ttbar"
+        android:scrollbars="vertical"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Enter Date"
+            style="@style/HintFontPath"/>
+
+        <EditText
+            android:id="@+id/Ed_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Refrence Number"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:id="@+id/Ed_refnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" From"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/SpFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" To"
+            android:layout_marginTop="15dp"
+            />
+
+        <Spinner
+            android:id="@+id/SpTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            >
+        </Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Product Code"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/Ed_PdCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Quantity"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/Ed_Quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:editable="false"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/HintFontPath"
+            android:text=" Note"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/Ed_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            style="@style/EditTextFontPath"
+            />
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:background="@drawable/adbutton"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

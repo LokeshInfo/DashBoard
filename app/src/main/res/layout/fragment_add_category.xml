@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        android:id="@+id/ttbar"
+        layout="@layout/layout_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/ttbar"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Category Code"
+        style="@style/HintFontPath"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/EdCatCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditTextFontPath"
+        android:inputType="text"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Category Name"
+            style="@style/HintFontPath"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/EdCatName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditTextFontPath"
+            android:inputType="text"
+            />
+
+        <Button
+            android:id="@+id/AddBiller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:text="Add Category"
+            android:background="@drawable/adbutton"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
